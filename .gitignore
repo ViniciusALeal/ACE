@@ -1,0 +1,13 @@
+# Ignorar venv
+venv/
+
+# Ignorar arquivos sensíveis
+.env
+
+# Ignorar arquivos do VSCode e sistema
+__pycache__/
+*.pyc
+*.pyo
+*.log
+.DS_Store
+.vscode/
