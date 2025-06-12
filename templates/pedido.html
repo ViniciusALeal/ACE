@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace</title>
+    <link rel="icon" type="image/png" href="static/img/ACE.png">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <style>
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-image: url('static/img/black.webp');
+            background-size: cover;
+            background-position: center;
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        body {
+            overflow-y: scroll;
+        }
+        
+        /* Esconder a barra de rolagem */
+        ::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+        
+        html {
+            scrollbar-width: none;
+        }
+    </style>
+    
+    
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="static/img/ACE.png" alt="Ace Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        
+    </ul>
+</nav>
+
+<!-- Container com o menu lateral e conteúdo central -->
+<div class="container">
+
+    <!-- Sidebar da esquerda -->
+    <div class="sidebar sidebar-left">
+        <div class="greyback3">
+            <h1 class="galaxyback1">
+                <a href="{{ url_for('home.home_route') }}" class="btn btn-primary mb-3">Inicio</a>
+            </h1>
+            <h1 class="azulback1">
+                <a href="{{ url_for('documentacao.documentacao_route') }}" class="btn btn-primary mb-3">Documentação</a>
+            </h1>
+            <h1 class="carmesinback1">
+                <a href="{{ url_for('sobre.sobre_route') }}" class="btn btn-primary mb-3">Sobre</a>
+            </h1>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="main-content">
+        <div class="greyback3">
+        <h1 class="galaxyback1">
+            Faça um pedido
+        </h1>
+        <form action="" style="text-align: center;">
+    
+            <div class="input-wrapper">
+            <span>Seu Email:</span>
+            <input type="email" placeholder="exemplo@email.com">
+            <span>Receber atualizações</span>
+            </div>
+            <br>
+            <div class="select-wrapper">
+            <span>Texto Esquerdo 1</span>
+            <select>
+                <option value="opcao1">Opção 1</option>
+                
+                <option value="opcao2">Opção 2</option>
+                
+                <option value="opcao3">Opção 3</option>
+            </select>
+            <span>Texto Direito 1</span>
+            </div>
+            <br>
+            <div class="select-wrapper">
+            <span>Texto Esquerdo 2</span>
+            <select>
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2">Opção 2</option>
+                <option value="opcao3">Opção 3</option>
+            </select>
+            <span>Texto Direito 2</span>
+            </div>
+            <br>
+            <div class="select-wrapper">
+            <span>Texto Esquerdo 3</span>
+            <select>
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2">Opção 2</option>
+                <option value="opcao3">Opção 3</option>
+            </select>
+            <span>Texto Direito 3</span>
+            </div>
+    
+        </form>
+        </div>
+  </div>
+
+    <!-- Sidebar da direita -->
+    <div class="sidebar sidebar-right">
+        <div class="greyback3">
+            <a href="#">Home</a>
+            <a href="#">Dashboard</a>
+            <a href="#">Orders</a>
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Ace. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

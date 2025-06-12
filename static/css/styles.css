@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-image: url('../img/background.gif');
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-grow: 1;
+    padding-top: 80px;
+    overflow: hidden;
+    flex: 1;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 40px;
+    bottom: 0;
+    width: 280px;
+    color: white;
+    padding: 10px;
+    overflow-y: auto;
+    z-index: 5;
+}
+
+.sidebar-left {
+    left: 0;
+}
+
+.sidebar-right {
+    right: 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    display: block;
+    line-height: 1.5;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+}
+
+/* Conteúdo principal */
+.main-content {
+    flex: 1;
+    margin-left: 300px;
+    margin-right: 300px;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: calc(100vh - 80px);
+}
+
+/* Footer */
+footer {
+    background-image: url('../img/background.gif');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    z-index: 5;
+    position: relative;
+    margin-top: auto;
+}
+
+/* Estilos reutilizáveis */
+.greyback,
+.greyback1,
+.greyback2,
+.greyback3,
+.galaxyback,
+.galaxyback1,
+.galaxyback2,
+.galaxyback3 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.greyback { background-image: url('../img/background.gif'); padding: 20px; margin: 20px; }
+.greyback1 { background-image: url('../img/background.gif'); padding: 10px; margin: 10px; }
+.greyback2 { background-image: url('../img/background.gif'); padding: 5px; margin: 5px; }
+.greyback3 { background-image: url('../img/background.gif'); padding: 2px; margin: 2px; }
+
+.galaxyback { background-image: url('../img/galaxy.gif'); padding: 20px; margin: 20px; }
+.galaxyback1 { background-image: url('../img/galaxy.gif'); padding: 10px; margin: 10px; }
+.galaxyback2 { background-image: url('../img/galaxy.gif'); padding: 5px; margin: 5px; }
+.galaxyback3 { background-image: url('../img/galaxy.gif'); padding: 2px; margin: 2px; }
+
+.azulback,
+.azulback1,
+.azulback2,
+.azulback3,
+.galaxyback,
+.blackback1,
+.blackback2,
+.blackback3 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.azulback { background-image: url('../img/azul.webp'); padding: 20px; margin: 20px; }
+.azulback1 { background-image: url('../img/azul.webp'); padding: 10px; margin: 10px; }
+.azulback2 { background-image: url('../img/azul.webp'); padding: 5px; margin: 5px; }
+.azulback3 { background-image: url('../img/azul.webp'); padding: 2px; margin: 2px; }
+
+.blackback { background-image: url('../img/black.webp'); padding: 20px; margin: 20px; }
+.blackback1 { background-image: url('../img/black.webp'); padding: 10px; margin: 10px; }
+.blackback2 { background-image: url('../img/black.webp'); padding: 5px; margin: 5px; }
+.blackback3 { background-image: url('../img/black.webp'); padding: 2px; margin: 2px; }
+
+.carmesinback,
+.carmesinback1,
+.carmesinback2,
+.carmesinback3
+ {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.carmesinback { background-image: url('../img/carmesin.webp'); padding: 20px; margin: 20px; }
+.carmesinback1 { background-image: url('../img/carmesin.webp'); padding: 10px; margin: 10px; }
+.carmesinback2 { background-image: url('../img/carmesin.webp'); padding: 5px; margin: 5px; }
+.carmesinback3 { background-image: url('../img/carmesin.webp'); padding: 2px; margin: 2px; }
+
