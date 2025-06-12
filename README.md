@@ -1,59 +1,65 @@
-TCC - Desenvolvimento de Sistemas
-Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul – Campus Pelotas Visconde da Graça
+# TCC - Desenvolvimento de Sistemas  
+**Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul – Campus Pelotas Visconde da Graça**
 
-📌 Sobre o Projeto
-Este repositório contém o Trabalho de Conclusão de Curso (TCC) apresentado como requisito para a conclusão do curso técnico em Desenvolvimento de Sistemas. 
-O projeto tem como objetivo analisar o desempenho de metricas de avaliação de codigo em algoritmos geneticos e produção da ferramenta ACE que se categoriza com ag 
-🎯 Objetivos
- Desenvolver um ag que gere codigo e evolua dependendo de metricas e metodos de seleção dinamicos
+## 📌 Sobre o Projeto
 
- Aplicar princípios de desenvolvimento ágil e boas práticas de programação
+Este repositório contém o Trabalho de Conclusão de Curso (TCC) apresentado como requisito para a conclusão do curso técnico em Desenvolvimento de Sistemas.  
+O projeto tem como objetivo analisar o desempenho de métricas de avaliação de código em algoritmos genéticos, além da produção da ferramenta **ACE**, que se categoriza como um **AG (algoritmo genético)**.
 
- Implementar uma solução real com potencial de uso no mercado
+## 🎯 Objetivos
 
- Demonstrar competências técnicas adquiridas durante o curso
+- Desenvolver um AG que gere código e evolua com base em métricas e métodos de seleção dinâmicos  
+- Aplicar princípios de desenvolvimento ágil e boas práticas de programação  
+- Implementar uma solução real com potencial de uso no mercado  
+- Demonstrar competências técnicas adquiridas durante o curso  
 
-🧰 Tecnologias Utilizadas
-Linguagem de Programação: python
+## 🧰 Tecnologias Utilizadas
 
-Frameworks/Bibliotecas: Flask peewee
-Banco de Dados: PostgreSQL
+- **Linguagem de Programação:** Python  
+- **Frameworks/Bibliotecas:** Flask, Peewee  
+- **Banco de Dados:** PostgreSQL  
+- **Outras Ferramentas:** Git, Figma, GitHub, VS Code  
 
-Outras Ferramentas: Git, Figma, Github vscode
+## 🧱 Estrutura do Projeto
 
-🧱 Estrutura do Projeto
-/database           → Banco de dados
-  /models              → Tabelas
-    geracao.py           → Historico populacional
-    pedido.py            → Historico de pedidos
-  database.py          → Configurações do orm
-/routes             → Código-fonte principal
-  documentacao.py      → Rota da pagina referente a documentação e funções agregadas
-  home.py              → Rota da pagina referente a index e funções agregadas
-  pedido.py            → Rota da pagina referente a pedido e funções agregadas
-  sobre.py             → Rota da pagina referente a sobre e funções agregadas
-/static       → Lógica de negócio e API
-  /css                 → diretorio de textos css
-    styles.css           → Classes CSS 
-  /img                 →
-    *                    → Backgrounds das intefaces web do projeto
-  /scripts             → Codigos responsaveis pelo funcionamento do ag
-   ACE.py                → Core do ag responsavel pelo gerencimento de rotinas
-   ai.py                 → Consumo de api de llm
-   genoma.py             → Responsavel pela elaboração direta dos trechos de codigo
-   keywords.py           → Dicionarios de Sintaxe em formato placeholder para uso
-   placeholder.py        → sistema auxiliar o placeholder temporario
-/templates      → Interface do usuário
-  documentacao.html    →documentação sobre o funcionamento do sistema
-  index.html           →landpage e dashboard de resultados
-  pedido.html          →entrada de parametos para geração de codigo
-  sobre.html           →descrição sobre o projeto
-main.py           →Core do projeto
-config.py        →Configuração referentes ao servidor
-ACE.db        → banco de dados
-README.md        → Este arquivo
+```plaintext
+/database               → Banco de dados
+  /models               → Tabelas
+    geracao.py          → Histórico populacional
+    pedido.py           → Histórico de pedidos
+  database.py           → Configurações do ORM
+
+/routes                 → Código-fonte principal (rotas Flask)
+  documentacao.py       → Rota da página de documentação e funções associadas
+  home.py               → Rota da página inicial e funções associadas
+  pedido.py             → Rota da página de pedido e funções associadas
+  sobre.py              → Rota da página sobre e funções associadas
+
+/static                 → Arquivos estáticos
+  /css
+    styles.css          → Classes CSS
+  /img
+    *                   → Backgrounds das interfaces web
+  /scripts              → Códigos do algoritmo genético
+    ACE.py              → Core do AG (gerenciamento das rotinas)
+    ai.py               → Consumo de API LLM
+    genoma.py           → Geração de trechos de código
+    keywords.py         → Dicionário de sintaxe com placeholders
+    placeholder.py      → Suporte a placeholders temporários
+
+/templates              → Interface do usuário (HTML)
+  documentacao.html     → Documentação do sistema
+  index.html            → Landing page e dashboard de resultados
+  pedido.html           → Entrada de parâmetros para geração de código
+  sobre.html            → Descrição do projeto
+
+main.py                 → Core do projeto (execução do app Flask)  
+config.py               → Configurações do servidor  
+ACE.db                  → Banco de dados local  
+README.md               → Este arquivo
+````
 📄 Documentação
-A documentação técnica e o relatório completo estão disponíveis na pasta /docs, incluindo:
+A documentação técnica e o relatório completo estão disponíveis clicando aqui, incluindo:
 
 Introdução e justificativa do projeto
 
