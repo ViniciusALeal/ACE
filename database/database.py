@@ -1,3 +1,7 @@
-from peewee import SqliteDatabase
+from peewee import *
 
-db = SqliteDatabase('ACE.db')
+db = SqliteDatabase("database")
+
+class Model(Model):
+    class Meta:
+        database = db

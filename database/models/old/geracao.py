@@ -1,6 +1,6 @@
-from peewee import *
+"""from peewee import *
 from database.database import db
-from database.models.pedido import Pedido
+from database.models.old.pedido import Pedido
 
 class Geracao(Model):
     id = AutoField()  # PK
@@ -16,4 +16,4 @@ class Geracao(Model):
 
     class Meta:
         database = db
-        table_name = 'Geracao'
+        table_name = 'Geracao'"""

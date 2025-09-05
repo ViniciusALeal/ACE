@@ -1,4 +1,4 @@
-# models/pedido.py
+"""# models/pedido.py
 from peewee import *
 from database.database import db
 
@@ -10,3 +10,4 @@ class Pedido(Model):
     class Meta:
         database = db
         table_name = 'Pedido'
+"""
