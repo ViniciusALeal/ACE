@@ -75,6 +75,7 @@ Conclusão e trabalhos futuros
 
 👨‍💻 Autor
 Vinicius Armendaris Leal
+
 Orientado por Profa. Dra. Maria Isabel Giusti Moreira
 
 Estudante do curso técnico em Desenvolvimento de Sistemas
